@@ -183,7 +183,6 @@
 			end
 			return t
 		end
-	end
 	
 	local resolvercache = {}
 	library.resolvercache = resolvercache
@@ -195,7 +194,6 @@
 						local thing = library.elements[flag] or library.designerelements[flag]
 						if thing and thing.Set then
 							task.spawn(thing.Set, thing, image)
-						end
 					end
 					return image
 				end
